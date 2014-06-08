@@ -30,6 +30,7 @@ module.exports = function(config) {
   });
 };
 ```
+See examples folder for Mocha test and karma example files.
 
 ## Thanks
 
