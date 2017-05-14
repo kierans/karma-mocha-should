@@ -24,7 +24,7 @@
   ],
   "peerDependencies": {
     "mocha": "*",
-    "mocha-should": "*",
+    "mocha-should": ">=0.0.2",
     "karma": ">=0.12.0"
   }
 }
