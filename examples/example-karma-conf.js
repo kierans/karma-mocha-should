@@ -7,19 +7,12 @@ module.exports = function(config) {
     basePath: ".",
 
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: [ "commonjs", "mocha", "mochashould", "chai" ],
+    frameworks: [ "mocha", "mochashould", "chai" ],
 
     // list of files / patterns to load in the browser
     files: [
       "example-test.js"
     ],
-
-    // preprocess matching files before serving them to the browser
-    // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
-    preprocessors: {
-      "**/mocha-should/index.js": [ "commonjs" ],
-      "example-test.js": [ "commonjs" ]
-    },
 
     // possible values: "dots", "progress"
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
