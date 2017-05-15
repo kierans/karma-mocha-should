@@ -15,12 +15,7 @@ Add `mocha-should` to the `frameworks` key in your Karma configuration **before 
 module.exports = function(config) {
   config.set({
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: [ "commonjs", "mocha", "mochashould", "chai" ],
-
-    preprocessors: {
-      "**/mocha-should/index.js": [ "commonjs" ],
-      "test/**/*.js": [ "commonjs" ]
-    }
+    frameworks: [ "mocha", "mochashould", "chai" ]
   });
 };
 ```

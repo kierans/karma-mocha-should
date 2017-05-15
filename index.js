@@ -11,17 +11,6 @@ var pattern = function(file) {
   };
 };
 
-/**
- * Load in the code to be sent to the browser.
- *
- * Since mocha-should is a CommonJS module, it will need to be
- * preprocessed for it to work with karma via karma-commonjs.
- *
- * Any tests will also need to be invoked via karma-commonjs, so include the
- * relevant tests files in the Karma preprocessor conf.
- *
- * @see karma-commonjs
- */
 var framework = function(files) {
   files.unshift(pattern(path.resolve(require.resolve("mocha-should"))));
 };
